@@ -1,0 +1,120 @@
+@import url("https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,100..900;1,9..144,100..900&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Overpass:ital,wght@0,100..900;1,100..900&display=swap");
+
+:root {
+  --color-orange: hsl(25, 97%, 53%);
+  --color-white: hsl(0, 0%, 100%);
+  --color-light-grey: hsl(217, 12%, 63%);
+  --color-medium-grey: hsl(216, 12%, 54%);
+  --color-dark-blue: hsl(213, 19%, 18%);
+  --color-very-dark-blue: hsl(216, 12%, 8%);
+}
+
+body {
+  margin: 0;
+  font-family: "Overpass";
+  letter-spacing: 0.5px;
+}
+
+.container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  background: var(--color-very-dark-blue);
+}
+
+.card {
+  background-color: var(--color-dark-blue);
+  padding: 25px;
+  height: 350px;
+  width: 350px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  border-radius: 15px;
+}
+
+.card img {
+  width: 6%;
+  border-radius: 50%;
+  background: hsl(213, 18%, 22%);
+  padding: 10px;
+}
+
+.card h2 {
+  color: var(--color-white);
+  font-weight: 500;
+}
+
+.card p {
+  color: var(--color-light-grey);
+}
+
+.card #rate {
+  display: flex;
+  justify-content: space-between;
+}
+
+.rate button {
+  text-decoration: none;
+  color: var(--color-light-grey);
+  background: hsl(213, 18%, 22%);
+  border-radius: 50%;
+  margin-right: 10px;
+  width: 55px;
+  padding: 20px;
+  border: none;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+.rate button:hover {
+  background: var(--color-light-grey);
+  color: var(--color-white);
+}
+
+.rate .active {
+  background: var(--color-orange);
+  color: var(--color-white);
+}
+
+.btn {
+  border: none;
+  border-radius: 20px;
+  background: var(--color-orange);
+  padding: 15px 0;
+  margin-top: 20px;
+  color: var(--color-white);
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.btn:hover {
+  background-color: var(--color-white);
+  color: var(--color-orange);
+}
+
+.thank-you {
+  background-color: var(--color-dark-blue);
+  padding: 25px;
+  height: 350px;
+  width: 350px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  border-radius: 15px;
+  text-align: center;
+  margin-left: 100px;
+  position: absolute;
+  display: none;
+}
+
+.thank-you #select {
+  border-radius: 15px;
+  padding: 10px;
+  background: hsl(213, 18%, 22%);
+  color: var(--color-orange);
+  margin: 0 auto;
+  margin-top: 10px;
+}
